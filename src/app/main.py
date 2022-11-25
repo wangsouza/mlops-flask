@@ -5,7 +5,7 @@ from flask_basicauth import BasicAuth
 from flask import Flask, request, jsonify
 
 columns = ['tamanho', 'ano', 'garagem']
-model = pickle.load(open('/home/dl4cv_files/mlops-flask/models/model.sav', 'rb'))
+model = pickle.load(open('../../models/model.sav', 'rb'))
 
 # Dar nomes
 app = Flask(__name__)
